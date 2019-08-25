@@ -37,6 +37,8 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.tbSpeed = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.btnTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tbSpeed)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             this.txtMakeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMakeList.Location = new System.Drawing.Point(12, 377);
             this.txtMakeList.Name = "txtMakeList";
-            this.txtMakeList.Size = new System.Drawing.Size(570, 32);
+            this.txtMakeList.Size = new System.Drawing.Size(706, 32);
             this.txtMakeList.TabIndex = 0;
             // 
             // btnRandomize
@@ -109,7 +111,7 @@
             // btnMakeList
             // 
             this.btnMakeList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMakeList.Location = new System.Drawing.Point(588, 377);
+            this.btnMakeList.Location = new System.Drawing.Point(724, 377);
             this.btnMakeList.Name = "btnMakeList";
             this.btnMakeList.Size = new System.Drawing.Size(96, 32);
             this.btnMakeList.TabIndex = 1;
@@ -139,7 +141,7 @@
             this.tbSpeed.Maximum = 150;
             this.tbSpeed.Minimum = 10;
             this.tbSpeed.Name = "tbSpeed";
-            this.tbSpeed.Size = new System.Drawing.Size(569, 45);
+            this.tbSpeed.Size = new System.Drawing.Size(705, 45);
             this.tbSpeed.TabIndex = 3;
             this.tbSpeed.Value = 10;
             this.tbSpeed.Scroll += new System.EventHandler(this.tbSpeed_Scroll);
@@ -155,6 +157,29 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Speed:";
             // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Location = new System.Drawing.Point(13, 13);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(29, 13);
+            this.lblUser.TabIndex = 5;
+            this.lblUser.Text = "User";
+            // 
+            // btnTest
+            // 
+            this.btnTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnTest.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTest.Location = new System.Drawing.Point(690, 415);
+            this.btnTest.MaximumSize = new System.Drawing.Size(200, 30);
+            this.btnTest.MinimumSize = new System.Drawing.Size(50, 30);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(131, 30);
+            this.btnTest.TabIndex = 2;
+            this.btnTest.Text = "Test";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.BtnTest_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,9 +187,11 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.ClientSize = new System.Drawing.Size(696, 450);
+            this.ClientSize = new System.Drawing.Size(832, 450);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbSpeed);
+            this.Controls.Add(this.btnTest);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnMakeList);
             this.Controls.Add(this.btnBST);
@@ -197,6 +224,8 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.TrackBar tbSpeed;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Button btnTest;
     }
 }
 

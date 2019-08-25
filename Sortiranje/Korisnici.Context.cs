@@ -26,5 +26,6 @@ namespace Sortiranje
         }
     
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Vremena> Vremenas { get; set; }
     }
 }

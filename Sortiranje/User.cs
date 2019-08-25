@@ -14,10 +14,19 @@ namespace Sortiranje
     
     public partial class User
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public User()
+        {
+            this.Vremenas = new HashSet<Vremena>();
+        }
+    
         public string username { get; set; }
         public string password { get; set; }
         public int bubble { get; set; }
         public int quick { get; set; }
         public int bst { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Vremena> Vremenas { get; set; }
     }
 }

@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="689a2f5f728844179eb40dd82f8031e1" Name="Diagram1">
         <EntityTypeShape EntityType="SortingModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SortingModel.Vremena" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="SortingModel.korisnik" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

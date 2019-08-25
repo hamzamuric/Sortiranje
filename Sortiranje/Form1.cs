@@ -33,6 +33,7 @@ namespace Sortiranje
             this.guest = guest;
             this.korisnik = korisnik;
             _ctx = ctx;
+            lblUser.Text = guest ? "Guest" : korisnik.username;
         }
 
         // iscrtava novo stanje forme
@@ -178,6 +179,12 @@ namespace Sortiranje
                 btnBST.Text = "BST Sort: " + korisnik.bst.ToString();
                 _ctx.SaveChanges();
             }
+        }
+
+        private void BtnTest_Click(object sender, EventArgs e)
+        {
+            var testiranje = new SortTest(_ctx, korisnik);
+            testiranje.Show();
         }
 
         // crta pivot ako postoji
